@@ -1,0 +1,89 @@
+.careers-page[data-v-0bfe0ea6] {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+    margin-top: var(--header-height)
+}
+
+@media screen and (min-width: 768px) {
+    .careers-page[data-v-0bfe0ea6] {
+        margin-bottom:80px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .careers-page[data-v-0bfe0ea6] {
+        gap:100px;
+        margin-bottom: 100px
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .careers-page[data-v-0bfe0ea6] {
+        margin-bottom:100px
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .careers-page[data-v-0bfe0ea6] {
+        margin-bottom:100px
+    }
+}
+
+.careers-page__subscribe[data-v-0bfe0ea6] {
+    margin-top: 50px;
+    padding: 0
+}
+
+@media screen and (min-width: 768px) {
+    .careers-page__subscribe[data-v-0bfe0ea6] {
+        margin-top:80px;
+        padding: 0 40px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .careers-page__subscribe[data-v-0bfe0ea6] {
+        margin-top:100px;
+        padding: 0 20px
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .careers-page__subscribe[data-v-0bfe0ea6] {
+        padding:0
+    }
+}
+
+.careers-page__description[data-v-0bfe0ea6] {
+    margin: 50px 0
+}
+
+@media screen and (min-width: 768px) {
+    .careers-page__description[data-v-0bfe0ea6] {
+        margin:50px 0 80px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .careers-page__description[data-v-0bfe0ea6] {
+        margin:100px 0 80px
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .careers-page__description[data-v-0bfe0ea6] {
+        margin:100px 0
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .careers-page__description[data-v-0bfe0ea6] {
+        margin-top:100px
+    }
+}
+
+.main-careers-page[data-v-117b8445] {
+    min-height: 100dvh
+}

@@ -1,0 +1,30 @@
+/*UILink*/
+.ui-link[data-v-09bd5634] {
+    align-items: center;
+    background-color: #ffffff1a;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    transition: background-color 80ms ease-out
+}
+
+.ui-link__icon[data-v-09bd5634] svg {
+    display: block;
+    width: 30px
+}
+
+.ui-link__text[data-v-09bd5634] {
+    color: #fff;
+    font-family: GothamProMundfish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%
+}
+
+.ui-link[data-v-09bd5634]:hover {
+    background-color: #ffffff4f;
+    transition: background-color 80ms ease-in
+}

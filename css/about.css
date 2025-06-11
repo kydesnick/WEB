@@ -1,0 +1,373 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gotham Pro', 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-image: url('https://ext.same-assets.com/121519018/973469615.png');
+    background-repeat: repeat;
+}
+
+/* Главный хедер с навигацией */
+header {
+    background-color: #000000; /* Пример цвета фона */
+    padding: 10px 20px;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header .logo img {
+    display: block;
+    height: auto;
+    max-width: 200px;
+}
+
+header .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+header nav .language-switcher {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header nav .language-switcher a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav .language-switcher img {
+    height: 15px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about_us {
+    padding: 80px 0 120px;
+    text-align: center;
+    background: #000000;
+    position: relative;
+}
+
+.about_us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, rgba(212, 83, 43, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.about_us h4 {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.about_us h1 {
+    font-size: clamp(60px, 8vw, 120px);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 60px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about_us img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.about_us p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 40px auto 0;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.our_history {
+    padding: 100px 0;
+    background-color: #000000;
+    position: relative;
+}
+
+.our_history::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.our_history h2 {
+    font-size: clamp(40px, 6vw, 80px);
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.our_history p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 400;
+}
+
+.our_history img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+}
+
+.our_values {
+    padding: 100px 0;
+    background-color: #000000;
+    text-align: center;
+}
+
+.our_values h2 {
+    font-size: clamp(40px, 6vw, 80px);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.partners {
+    padding: 100px 0;
+    background-color: #000000;
+    text-align: center;
+    position: relative;
+}
+
+.partners h2 {
+    font-size: clamp(40px, 6vw, 80px);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.partners p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.our_passion {
+    padding: 200px 0;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+}
+
+.our_passion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.our_passion h1 {
+    font-size: clamp(60px, 8vw, 120px);
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+.art, .music, .shooting, .science {
+    padding: 100px 0;
+    background-color: #000000;
+    position: relative;
+}
+
+.art:nth-child(even), .music:nth-child(even),
+.shooting:nth-child(even), .science:nth-child(even) {
+    background-color: #000000;
+}
+
+.art h1, .music h1, .shooting h1, .science h1 {
+    font-size: clamp(40px, 6vw, 80px);
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.art p, .music p, .shooting p, .science p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.art img, .music img, .shooting img, .science img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 60px auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.art img:hover, .music img:hover,
+.shooting img:hover, .science img:hover {
+    transform: scale(1.02);
+}
+
+
+footer {
+    background-color: #000000;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #2a2a2a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+    header nav {
+        gap: 20px;
+    }
+
+    header nav a {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .about_us, .our_history, .our_values, .partners,
+    .art, .music, .shooting, .science {
+        padding: 60px 0;
+    }
+
+    .about_us p, .our_history p, .partners p,
+    .art p, .music p, .shooting p, .science p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .our_passion {
+        padding: 150px 0;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    header nav {
+        gap: 15px;
+    }
+
+    header nav a {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .about_us h4 {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .about_us, .our_history, .our_values, .partners,
+    .art, .music, .shooting, .science {
+        padding: 40px 0;
+    }
+
+    .our_passion {
+        padding: 100px 0;
+    }
+}
