@@ -6,22 +6,27 @@
 }
 
 body {
-    font-family: 'Gotham Pro', 'Roboto', sans-serif;
     background-color: #ffffff;
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
     background-image: url('https://ext.same-assets.com/121519018/973469615.png');
     background-repeat: repeat;
+    font-family: 'GothamProMundfish';
+    font-style: normal;
 }
 
 /* Главный хедер с навигацией */
 header {
-    background-color: #000000; /* Пример цвета фона */
+    background-color: #000000;
     padding: 10px 20px;
 }
 
-
+.highlight {
+    background-color: #841d1d;
+    color: #ffffff;
+    padding: 2px 4px;
+}
 header nav {
     display: flex;
     justify-content: start;
@@ -87,10 +92,9 @@ header nav .language-switcher img {
 }
 
 .about_us {
-    padding: 80px 0 120px;
-    text-align: center;
-    background: #000000;
-    position: relative;
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
 }
 
 .about_us::before {
@@ -113,6 +117,21 @@ header nav .language-switcher img {
     margin-bottom: 20px;
     opacity: 0.8;
 }
+.header-section h4 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    background-color: #841d1d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-left: 10%;
+}
 
 .about_us h1 {
     font-size: clamp(60px, 8vw, 120px);
@@ -126,11 +145,9 @@ header nav .language-switcher img {
 
 .about_us img {
     width: 100%;
-    max-width: 800px;
+    max-width: auto;
     height: auto;
     margin: 40px auto;
-    border-radius: 8px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .about_us p {
@@ -159,6 +176,66 @@ header nav .language-switcher img {
     pointer-events: none;
 }
 
+.main-title h2 {
+    font-size: clamp(60px, 8vw, 120px); 
+    font-weight: 600;
+    line-height: 1; 
+    margin-bottom: 40px;
+    margin-left: 10%;
+}
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.about_us p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    font-size: clamp(100px, 10vw, 100px);
+    letter-spacing: 2px;
+}
+
+.text-container {
+    background-color: #000;
+    color: #808080;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: (269deg, #6f6f6f 2.4%, #737373 52.25%, #858585 61.41%, #535353 99.87%);
+}
+
+.text-container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: bold;
+    color: #808080;
+    background-color: (269deg, #6f6f6f 2.4%, #737373 52.25%, #858585 61.41%, #535353 99.87%);
+}
+.text-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Серый дымчатый градиент */
+    z-index: -1;
+}
+
+::selection {
+    background-color: #841d1d; 
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #841d1d;
+    color: #ffffff;
+}
 .our_history h2 {
     font-size: clamp(40px, 6vw, 80px);
     font-weight: 700;
@@ -249,14 +326,16 @@ header nav .language-switcher img {
     pointer-events: none;
 }
 
-.our_passion h1 {
-    font-size: clamp(60px, 8vw, 120px);
+.our_passion p {
+    font-size: clamp(52px, 5vw, 52px);
     font-weight: 700;
-    color: #ffffff;
+    color: transparent;
+    background: linear-gradient(to right, #100D0D, #FFFFFF);
+    -webkit-background-clip: text;
+    background-clip: text;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 30px;
 }
-
 
 .art, .music, .shooting, .science {
     padding: 100px 0;
@@ -314,60 +393,140 @@ footer {
     font-weight: 400;
 }
 
+/* Карусель */
+.carousel {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #000000;
+    padding: 40px 60px;
+}
 
+.carousel-track-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    color: #841d1d;
+    text-align: center;
+}
+
+.carousel-slide h3 {
+    font-size: clamp(28px, 5vw, 36px);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.carousel-slide p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/* Кнопки карусели */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: #ebab2f;
+    cursor: pointer;
+    padding: 10px;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    color: #d45a1b;
+}
+
+.carousel-btn.prev {
+    left: 15px;
+}
+
+.carousel-btn.next {
+    right: 15px;
+}
+
+/* Кнопки карусели */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: #841d1d;
+    cursor: pointer;
+    padding: 10px;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    color: #841d1d;
+}
+
+.carousel-btn.prev {
+    left: 15px;
+}
+
+.carousel-btn.next {
+    right: 15px;
+}
+
+/*--------------------------------------------------*/
+/* Адаптив */
 @media (max-width: 768px) {
-    header nav {
-        gap: 20px;
+    .carousel {
+        padding: 30px 40px;
     }
 
-    header nav a {
-        font-size: 12px;
-        padding: 8px 15px;
+    .carousel-slide h3 {
+        font-size: 24px;
     }
 
-    .about_us, .our_history, .our_values, .partners,
-    .art, .music, .shooting, .science {
-        padding: 60px 0;
-    }
-
-    .about_us p, .our_history p, .partners p,
-    .art p, .music p, .shooting p, .science p {
+    .carousel-slide p {
         font-size: 16px;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
-    .our_passion {
-        padding: 150px 0;
-        background-attachment: scroll;
+    .carousel-btn {
+        font-size: 32px;
     }
 }
 
 @media (max-width: 480px) {
-    header .logo {
-        font-size: 24px;
-        margin-bottom: 15px;
+    .carousel {
+        padding: 20px 20px;
     }
 
-    header nav {
-        gap: 15px;
+    .carousel-slide h3 {
+        font-size: 20px;
     }
 
-    header nav a {
-        font-size: 10px;
-        padding: 6px 10px;
+    .carousel-slide p {
+        font-size: 14px;
     }
 
-    .about_us h4 {
-        font-size: 12px;
-        letter-spacing: 2px;
-    }
-
-    .about_us, .our_history, .our_values, .partners,
-    .art, .music, .shooting, .science {
-        padding: 40px 0;
-    }
-
-    .our_passion {
-        padding: 100px 0;
+    .carousel-btn {
+        font-size: 28px;
     }
 }
