@@ -1,0 +1,175 @@
+.about-page-passion[data-v-a31ec05d] {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px;
+    padding-top: 75px;
+    position: relative
+}
+
+@media screen and (min-width: 768px) {
+    .about-page-passion[data-v-a31ec05d] {
+        padding-bottom:120px;
+        padding-top: 120px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-page-passion[data-v-a31ec05d] {
+        padding-bottom:150px;
+        padding-top: 150px
+    }
+}
+
+.about-page-passion__wrapper-ellipse[data-v-a31ec05d] {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute
+}
+
+.about-page-passion__ellipse-1[data-v-a31ec05d] {
+    animation: spin-a31ec05d 10s linear infinite;
+    border: 1px solid #242424;
+    border-radius: 130px;
+    height: 130px;
+    position: absolute;
+    width: 122px
+}
+
+@media screen and (min-width: 768px) {
+    .about-page-passion__ellipse-1[data-v-a31ec05d] {
+        border-radius:202px;
+        height: 202px;
+        width: 190px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-page-passion__ellipse-1[data-v-a31ec05d] {
+        border-radius:272px;
+        height: 272px;
+        width: 255px
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .about-page-passion__ellipse-1[data-v-a31ec05d] {
+        border-radius:362px;
+        height: 362px;
+        width: 339px
+    }
+}
+
+.about-page-passion__ellipse-2[data-v-a31ec05d] {
+    animation: spin-a31ec05d 20s linear infinite;
+    border: 1px solid #242424;
+    border-radius: 118px;
+    height: 118px;
+    position: absolute;
+    width: 111px
+}
+
+@media screen and (min-width: 768px) {
+    .about-page-passion__ellipse-2[data-v-a31ec05d] {
+        border-radius:184px;
+        height: 184px;
+        width: 172px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-page-passion__ellipse-2[data-v-a31ec05d] {
+        border-radius:248px;
+        height: 248px;
+        width: 232px
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .about-page-passion__ellipse-2[data-v-a31ec05d] {
+        border-radius:330px;
+        height: 330px;
+        width: 309px
+    }
+}
+
+.about-page-passion__ellipse-3[data-v-a31ec05d] {
+    animation: spin-a31ec05d 30s linear infinite;
+    border: 1px solid #242424;
+    border-radius: 138px;
+    height: 138px;
+    position: absolute;
+    width: 117px
+}
+
+@media screen and (min-width: 768px) {
+    .about-page-passion__ellipse-3[data-v-a31ec05d] {
+        border-radius:214px;
+        height: 214px;
+        width: 182px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-page-passion__ellipse-3[data-v-a31ec05d] {
+        border-radius:289px;
+        height: 289px;
+        width: 245px
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .about-page-passion__ellipse-3[data-v-a31ec05d] {
+        border-radius:384px;
+        height: 384px;
+        width: 326px
+    }
+}
+
+.about-page-passion__text[data-v-a31ec05d] {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(269deg,#fff 40.57%,hsla(0,0%,100%,.29) 67.67%,hsla(0,0%,100%,.43) 101.62%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 10.6px;
+    margin-left: 10.6px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2
+}
+
+@media screen and (min-width: 768px) {
+    .about-page-passion__text[data-v-a31ec05d] {
+        letter-spacing:39px;
+        margin-left: 39px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-page-passion__text[data-v-a31ec05d] {
+        font-size:40px;
+        letter-spacing: 52px;
+        margin-left: 52px
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .about-page-passion__text[data-v-a31ec05d] {
+        font-size:52px;
+        letter-spacing: 67.6px;
+        margin-left: 67.6px
+    }
+}
+
+@keyframes spin-a31ec05d {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(1turn)
+    }
+}

@@ -1,0 +1,281 @@
+/*SectionDescription*/
+.section-description[data-v-01539735] {
+    position: relative
+}
+
+.section-description__title[data-v-01539735] {
+    word-wrap: break-word;
+    margin-bottom: 20px
+}
+
+.section-description__title_fitted[data-v-01539735] {
+    font-size: 25px
+}
+
+@media screen and (min-width: 768px) {
+    .section-description__title[data-v-01539735] {
+        margin-bottom:30px
+    }
+
+    .section-description__title_fitted[data-v-01539735] {
+        font-size: 40px
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .section-description__title[data-v-01539735] {
+        max-width:400px;
+        position: absolute;
+        top: 0
+    }
+
+    .section-description__title_fitted[data-v-01539735] {
+        font-size: 36px
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .section-description__title[data-v-01539735] {
+        left:0
+    }
+
+    .section-description__title_fitted[data-v-01539735] {
+        font-size: 36px
+    }
+}
+
+.section-description__icon[data-v-01539735] {
+    display: none
+}
+
+@media screen and (min-width: 1366px) {
+    .section-description__icon[data-v-01539735] svg {
+        height:172px;
+        width: 172px
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .section-description__icon[data-v-01539735] {
+        bottom:0;
+        display: block;
+        left: 0;
+        position: absolute
+    }
+}
+
+.section-description__powerhouse-button[data-v-01539735] {
+    margin-top: 20px;
+    max-width: 100%
+}
+
+@media screen and (min-width: 768px) {
+    .section-description__powerhouse-button[data-v-01539735] {
+        margin:30px auto 0;
+        max-width: -moz-fit-content;
+        max-width: fit-content
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .section-description__powerhouse-button[data-v-01539735] {
+        margin:30px 0 0 478px
+    }
+}
+
+.section-description__content[data-v-01539735] {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.section-description__content[data-v-01539735] p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 904px
+}
+
+@media screen and (min-width: 1366px) {
+    .section-description__content[data-v-01539735] p {
+        margin-left:478px
+    }
+}
+
+.section-description__content[data-v-01539735] blockquote>p {
+    font-size: 20px;
+    line-height: 32px
+}
+
+@media screen and (min-width: 1366px) {
+    .section-description__content[data-v-01539735] blockquote {
+        margin-left:478px
+    }
+
+    .section-description__content[data-v-01539735] blockquote>p {
+        font-size: 24px;
+        line-height: 35.5px;
+        margin-left: 0
+    }
+}
+
+.section-description__content[data-v-01539735] img {
+    height: 100%!important;
+    transition: transform 5s linear;
+    width: 100%!important
+}
+
+.section-description__content[data-v-01539735] img:hover {
+    transform: scale(1.1)
+}
+
+.section-description__content[data-v-01539735] s {
+    text-decoration: none
+}
+
+.section-description__content-img-hover-filter[data-v-01539735] img {
+    transition: filter 80ms linear,transform 5s linear
+}
+
+.section-description__content-img-hover-filter[data-v-01539735] img:hover {
+    transform: scale(1.1);
+    transition: filter 80ms linear,transform 5s linear
+}
+
+@media screen and (min-width: 1366px) {
+    .section-description__content[data-v-01539735] img:nth-of-type(2n) {
+        right:120px
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .section-description__content[data-v-01539735] img:nth-of-type(2n) {
+        right:277px
+    }
+}
+
+.section-description__content-revert[data-v-01539735] img {
+    position: relative;
+    transition: transform 5s linear
+}
+
+.section-description__content-revert[data-v-01539735] img:hover {
+    transform: scale(1.1)
+}
+
+@media screen and (min-width: 1366px) {
+    .section-description__content-revert[data-v-01539735] img {
+        right:120px
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .section-description__content-revert[data-v-01539735] img {
+        right:277px
+    }
+}
+
+.swiper-description[data-v-01539735] {
+    margin: 30px 0
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-description[data-v-01539735] {
+        margin:50px 0
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .swiper-description[data-v-01539735] {
+        margin:70px 0
+    }
+}
+
+.section-description__content-image {
+    align-self: center;
+    height: auto!important;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+    width: 100vw!important
+}
+
+@media screen and (min-width: 768px) {
+    .section-description__content-image {
+        margin:30px 0
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-description__content-image {
+        margin:40px 0;
+        max-height: 500px
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .section-description__content-image {
+        align-self:normal;
+        left: auto;
+        margin: 50px 0;
+        max-height: 666px;
+        min-width: 1246px;
+        width: auto!important
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .section-description__content-image {
+        max-height:817px;
+        min-width: 1643px
+    }
+}
+
+.section-description__content-image-revert {
+    align-self: center;
+    height: auto!important;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+    width: 100vw!important
+}
+
+@media screen and (min-width: 768px) {
+    .section-description__content-image-revert {
+        margin:30px 0
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-description__content-image-revert {
+        margin:40px 0;
+        max-height: 500px
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .section-description__content-image-revert {
+        align-self:normal;
+        left: auto;
+        margin: 50px 0;
+        max-height: 666px;
+        min-width: 1246px;
+        right: 120px;
+        width: auto!important
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .section-description__content-image-revert {
+        min-width:1352px;
+        right: 184px
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .section-description__content-image-revert {
+        max-height:817px;
+        min-width: 1643px;
+        right: 277px
+    }
+}

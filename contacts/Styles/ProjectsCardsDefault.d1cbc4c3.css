@@ -1,0 +1,17 @@
+.projects-cards-default[data-v-dba4864f],.projects-cards-default__list[data-v-dba4864f] {
+    display: flex;
+    flex-direction: column;
+    gap: 50px
+}
+
+@media screen and (min-width: 768px) {
+    .projects-cards-default__list[data-v-dba4864f] {
+        gap:80px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .projects-cards-default__list[data-v-dba4864f] {
+        gap:100px
+    }
+}

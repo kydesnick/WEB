@@ -1,0 +1,41 @@
+/*VideoComponent*/
+.video-component[data-v-7d655a3d] {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-height: 1000px;
+    max-width: 1920px;
+    position: relative
+}
+
+@media screen and (min-width: 768px) and (min-height:600px) {
+    .video-component[data-v-7d655a3d] {
+        height:100dvh
+    }
+}
+
+.video-component__inner[data-v-7d655a3d] {
+    flex: 2;
+    min-height: 517px;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+.video-component__inner-background[data-v-7d655a3d] {
+    height: 100%;
+    min-height: 517px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.video-component__mobile[data-v-7d655a3d] {
+    flex: 1
+}
+
+@media screen and (min-width: 768px) {
+    .video-component__mobile[data-v-7d655a3d] {
+        flex:none
+    }
+}
