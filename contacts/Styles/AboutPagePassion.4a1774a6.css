@@ -1,4 +1,4 @@
-.about-page-passion[data-v-a31ec05d] {
+.about-page-passion {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -8,27 +8,27 @@
 }
 
 @media screen and (min-width: 768px) {
-    .about-page-passion[data-v-a31ec05d] {
+    .about-page-passion {
         padding-bottom:120px;
         padding-top: 120px
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .about-page-passion[data-v-a31ec05d] {
+    .about-page-passion {
         padding-bottom:150px;
         padding-top: 150px
     }
 }
 
-.about-page-passion__wrapper-ellipse[data-v-a31ec05d] {
+.about-page-passion__wrapper-ellipse {
     align-items: center;
     display: flex;
     justify-content: center;
     position: absolute
 }
 
-.about-page-passion__ellipse-1[data-v-a31ec05d] {
+.about-page-passion__ellipse-1 {
     animation: spin-a31ec05d 10s linear infinite;
     border: 1px solid #242424;
     border-radius: 130px;
@@ -38,7 +38,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .about-page-passion__ellipse-1[data-v-a31ec05d] {
+    .about-page-passion__ellipse-1 {
         border-radius:202px;
         height: 202px;
         width: 190px
@@ -46,7 +46,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .about-page-passion__ellipse-1[data-v-a31ec05d] {
+    .about-page-passion__ellipse-1 {
         border-radius:272px;
         height: 272px;
         width: 255px
@@ -54,14 +54,14 @@
 }
 
 @media screen and (min-width: 1366px) {
-    .about-page-passion__ellipse-1[data-v-a31ec05d] {
+    .about-page-passion__ellipse-1 {
         border-radius:362px;
         height: 362px;
         width: 339px
     }
 }
 
-.about-page-passion__ellipse-2[data-v-a31ec05d] {
+.about-page-passion__ellipse-2 {
     animation: spin-a31ec05d 20s linear infinite;
     border: 1px solid #242424;
     border-radius: 118px;
@@ -71,7 +71,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .about-page-passion__ellipse-2[data-v-a31ec05d] {
+    .about-page-passion__ellipse-2 {
         border-radius:184px;
         height: 184px;
         width: 172px
@@ -79,7 +79,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .about-page-passion__ellipse-2[data-v-a31ec05d] {
+    .about-page-passion__ellipse-2 {
         border-radius:248px;
         height: 248px;
         width: 232px
@@ -87,14 +87,14 @@
 }
 
 @media screen and (min-width: 1366px) {
-    .about-page-passion__ellipse-2[data-v-a31ec05d] {
+    .about-page-passion__ellipse-2 {
         border-radius:330px;
         height: 330px;
         width: 309px
     }
 }
 
-.about-page-passion__ellipse-3[data-v-a31ec05d] {
+.about-page-passion__ellipse-3 {
     animation: spin-a31ec05d 30s linear infinite;
     border: 1px solid #242424;
     border-radius: 138px;
@@ -104,7 +104,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .about-page-passion__ellipse-3[data-v-a31ec05d] {
+    .about-page-passion__ellipse-3 {
         border-radius:214px;
         height: 214px;
         width: 182px
@@ -112,7 +112,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .about-page-passion__ellipse-3[data-v-a31ec05d] {
+    .about-page-passion__ellipse-3 {
         border-radius:289px;
         height: 289px;
         width: 245px
@@ -120,14 +120,14 @@
 }
 
 @media screen and (min-width: 1366px) {
-    .about-page-passion__ellipse-3[data-v-a31ec05d] {
+    .about-page-passion__ellipse-3 {
         border-radius:384px;
         height: 384px;
         width: 326px
     }
 }
 
-.about-page-passion__text[data-v-a31ec05d] {
+.about-page-passion__text {
     -webkit-text-fill-color: transparent;
     background: linear-gradient(269deg,#fff 40.57%,hsla(0,0%,100%,.29) 67.67%,hsla(0,0%,100%,.43) 101.62%);
     background-clip: text;
@@ -142,14 +142,14 @@
 }
 
 @media screen and (min-width: 768px) {
-    .about-page-passion__text[data-v-a31ec05d] {
+    .about-page-passion__text {
         letter-spacing:39px;
         margin-left: 39px
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .about-page-passion__text[data-v-a31ec05d] {
+    .about-page-passion__text {
         font-size:40px;
         letter-spacing: 52px;
         margin-left: 52px
@@ -157,7 +157,7 @@
 }
 
 @media screen and (min-width: 1366px) {
-    .about-page-passion__text[data-v-a31ec05d] {
+    .about-page-passion__text {
         font-size:52px;
         letter-spacing: 67.6px;
         margin-left: 67.6px

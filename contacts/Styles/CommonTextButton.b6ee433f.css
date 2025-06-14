@@ -1,23 +1,23 @@
-.text-button[data-v-4a682552] {
+.text-button {
     padding-top: 30px;
     position: relative
 }
 
 @media screen and (min-width: 768px) {
-    .text-button__wrapper[data-v-4a682552] {
+    .text-button__wrapper {
         padding-left:50px
     }
 }
 
 @media screen and (min-width: 1366px) {
-    .text-button__wrapper[data-v-4a682552] {
+    .text-button__wrapper {
         align-items:flex-start;
         display: flex;
         justify-content: space-between
     }
 }
 
-.text-button[data-v-4a682552]:before {
+.text-button:before {
     border-bottom: none;
     border-top: 10px solid hsla(0,0%,85%,.3);
     content: "";
@@ -29,34 +29,34 @@
 }
 
 @media screen and (min-width: 768px) {
-    .text-button[data-v-4a682552]:before {
+    .text-button:before {
         border-left:10px solid hsla(0,0%,85%,.3);
         width: 0
     }
 }
 
-.text-button__text[data-v-4a682552] {
+.text-button__text {
     display: inline-block;
     font-size: 20px;
     line-height: 32px
 }
 
 @media screen and (min-width: 1366px) {
-    .text-button__text[data-v-4a682552] {
+    .text-button__text {
         font-size:24px;
         line-height: 35.5px;
         max-width: 694px
     }
 }
 
-.text-button__btn[data-v-4a682552] {
+.text-button__btn {
     margin-top: 20px;
     width: -moz-max-content;
     width: max-content
 }
 
 @media screen and (min-width: 1366px) {
-    .text-button__btn[data-v-4a682552] {
+    .text-button__btn {
         margin-top:0
     }
 }

@@ -1,9 +1,9 @@
 /*_pageSlug_*/
-.unique-page-wrapper[data-v-ea6d6b75] {
+.unique-page-wrapper {
     min-height: 100dvh
 }
 
-.unique-page[data-v-ea6d6b75] {
+.unique-page {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -12,32 +12,32 @@
     position: relative
 }
 
-.unique-page_mt[data-v-ea6d6b75] {
+.unique-page_mt {
     margin-top: 180px
 }
 
 @media screen and (min-width: 768px) {
-    .unique-page[data-v-ea6d6b75] {
+    .unique-page {
         gap:80px;
         margin-bottom: 80px
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .unique-page[data-v-ea6d6b75] {
+    .unique-page {
         gap:100px;
         margin-bottom: 100px
     }
 }
 
 @media screen and (min-width: 1366px) {
-    .unique-page[data-v-ea6d6b75] {
+    .unique-page {
         margin-bottom:100px
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .unique-page[data-v-ea6d6b75] {
+    .unique-page {
         gap:150px;
         margin-bottom: 100px
     }

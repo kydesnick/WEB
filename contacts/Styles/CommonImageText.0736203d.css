@@ -1,5 +1,5 @@
 /*CommonImageText*/
-.animation[data-v-55e1d6b1] {
+.animation {
     align-items: center;
     animation: animation-55e1d6b1 80s linear infinite;
     display: inline-flex;
@@ -10,61 +10,61 @@
 }
 
 @media screen and (min-width: 768px) {
-    .animation[data-v-55e1d6b1] {
+    .animation {
         height:109px
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .animation[data-v-55e1d6b1] {
+    .animation {
         height:148px
     }
 }
 
 @media screen and (min-width: 1366px) {
-    .animation[data-v-55e1d6b1] {
+    .animation {
         height:213px
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .animation[data-v-55e1d6b1] {
+    .animation {
         height:291px
     }
 }
 
-.animation:hover .animation__text[data-v-55e1d6b1] {
+.animation:hover .animation__text {
     opacity: 0
 }
 
-.animation:hover .animation__img[data-v-55e1d6b1],.animation:hover .animation__text-visible[data-v-55e1d6b1] {
+.animation:hover .animation__img,.animation:hover .animation__text-visible {
     opacity: 1
 }
 
-.animation__text[data-v-55e1d6b1] {
+.animation__text {
     transition: opacity .2s linear;
     white-space: nowrap
 }
 
-.animation__text-hidden[data-v-55e1d6b1] {
+.animation__text-hidden {
     display: none
 }
 
-.animation__text-visible[data-v-55e1d6b1] {
+.animation__text-visible {
     opacity: 1
 }
 
-.animation__text-mobile-hidden[data-v-55e1d6b1] {
+.animation__text-mobile-hidden {
     opacity: 0
 }
 
 @media screen and (min-width: 1366px) {
-    .animation__text-mobile-hidden[data-v-55e1d6b1] {
+    .animation__text-mobile-hidden {
         opacity:1
     }
 }
 
-.animation__text-item[data-v-55e1d6b1] {
+.animation__text-item {
     -webkit-text-stroke: 3px hsla(0,0%,100%,.6);
     align-items: center;
     color: transparent;
@@ -77,34 +77,34 @@
 }
 
 @media screen and (min-width: 768px) {
-    .animation__text-item[data-v-55e1d6b1] {
+    .animation__text-item {
         font-size:148px;
         margin-top: 59.2px
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .animation__text-item[data-v-55e1d6b1] {
+    .animation__text-item {
         font-size:196px;
         margin-top: 78.4px
     }
 }
 
 @media screen and (min-width: 1366px) {
-    .animation__text-item[data-v-55e1d6b1] {
+    .animation__text-item {
         font-size:290px;
         margin-top: 116px
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .animation__text-item[data-v-55e1d6b1] {
+    .animation__text-item {
         font-size:400px;
         margin-top: 160px
     }
 }
 
-.animation__img[data-v-55e1d6b1] {
+.animation__img {
     height: 100%;
     opacity: 0;
     position: absolute;
@@ -113,11 +113,11 @@
     white-space: nowrap
 }
 
-.animation__img-hidden[data-v-55e1d6b1] {
+.animation__img-hidden {
     display: none
 }
 
-.animation__img-visible[data-v-55e1d6b1] {
+.animation__img-visible {
     animation: animation-55e1d6b1 80s linear infinite;
     display: inline-flex;
     flex-direction: row;
@@ -126,17 +126,17 @@
     width: max-content
 }
 
-.animation__img-mobile-hidden[data-v-55e1d6b1] {
+.animation__img-mobile-hidden {
     opacity: 1
 }
 
 @media screen and (min-width: 1366px) {
-    .animation__img-mobile-hidden[data-v-55e1d6b1] {
+    .animation__img-mobile-hidden {
         opacity:0
     }
 }
 
-.animation__img-item[data-v-55e1d6b1] {
+.animation__img-item {
     align-items: center;
     -webkit-clip-path: polygon(25% 0,100% 0,75% 100%,0 100%);
     clip-path: polygon(25% 0,100% 0,75% 100%,0 100%);
@@ -148,28 +148,28 @@
 }
 
 @media screen and (min-width: 768px) {
-    .animation__img-item[data-v-55e1d6b1] {
+    .animation__img-item {
         margin-left:-50px;
         width: 240px
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .animation__img-item[data-v-55e1d6b1] {
+    .animation__img-item {
         margin-left:-70px;
         width: 320px
     }
 }
 
 @media screen and (min-width: 1366px) {
-    .animation__img-item[data-v-55e1d6b1] {
+    .animation__img-item {
         margin-left:-100px;
         width: 460px
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .animation__img-item[data-v-55e1d6b1] {
+    .animation__img-item {
         margin-left:-140px;
         width: 630px
     }

@@ -1,12 +1,12 @@
 /*CommonImageTetris*/
-.common-image-tetris[data-v-f0fab2b1] {
+.common-image-tetris {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%
 }
 
-.common-image-tetris__group[data-v-f0fab2b1] {
+.common-image-tetris__group {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -14,16 +14,16 @@
 }
 
 @media screen and (min-width: 768px) {
-    .common-image-tetris__group[data-v-f0fab2b1] {
+    .common-image-tetris__group {
         display:grid
     }
 }
 
-.common-image-tetris__group-1[data-v-f0fab2b1] {
+.common-image-tetris__group-1 {
     display: flex
 }
 
-.common-image-tetris__group-image[data-v-f0fab2b1] {
+.common-image-tetris__group-image {
     cursor: pointer;
     height: 250px;
     overflow: hidden;
@@ -32,7 +32,7 @@
     z-index: 2
 }
 
-.common-image-tetris__group-image[data-v-f0fab2b1]:after {
+.common-image-tetris__group-image:after {
     background: rgba(35,35,35,.6);
     border: 1px solid #5b5b5b;
     bottom: 10px;
@@ -46,67 +46,67 @@
 }
 
 @media screen and (min-width: 768px) {
-    .common-image-tetris__group-image[data-v-f0fab2b1] {
+    .common-image-tetris__group-image {
         height:223px
     }
 
-    .common-image-tetris__group-image[data-v-f0fab2b1]:after {
+    .common-image-tetris__group-image:after {
         display: none
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .common-image-tetris__group-image[data-v-f0fab2b1] {
+    .common-image-tetris__group-image {
         height:273px
     }
 }
 
 @media screen and (min-width: 1366px) {
-    .common-image-tetris__group-image[data-v-f0fab2b1] {
+    .common-image-tetris__group-image {
         height:358px
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .common-image-tetris__group-image[data-v-f0fab2b1] {
+    .common-image-tetris__group-image {
         height:435px
     }
 }
 
-.common-image-tetris__group-image[data-v-f0fab2b1] img {
+.common-image-tetris__group-image img {
     transition: transform 5s linear
 }
 
-.common-image-tetris__group-image[data-v-f0fab2b1] img:hover {
+.common-image-tetris__group-image img:hover {
     transform: scale(1.1);
     transition: transform 5s linear
 }
 
-.large-image[data-v-f0fab2b1] {
+.large-image {
     grid-column: span 2;
     width: 100%
 }
 
 @media screen and (min-width: 768px) {
-    .large-image[data-v-f0fab2b1] {
+    .large-image {
         height:434px
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .large-image[data-v-f0fab2b1] {
+    .large-image {
         height:473px
     }
 }
 
 @media screen and (min-width: 1366px) {
-    .large-image[data-v-f0fab2b1] {
+    .large-image {
         height:627px
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .large-image[data-v-f0fab2b1] {
+    .large-image {
         height:760px
     }
 }

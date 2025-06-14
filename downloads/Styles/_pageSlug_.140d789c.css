@@ -1,0 +1,44 @@
+/*_pageSlug_*/
+.unique-page-wrapper[data-v-ea6d6b75] {
+    min-height: 100dvh
+}
+
+.unique-page[data-v-ea6d6b75] {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+    margin-top: var(--header-height);
+    position: relative
+}
+
+.unique-page_mt[data-v-ea6d6b75] {
+    margin-top: 180px
+}
+
+@media screen and (min-width: 768px) {
+    .unique-page[data-v-ea6d6b75] {
+        gap:80px;
+        margin-bottom: 80px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .unique-page[data-v-ea6d6b75] {
+        gap:100px;
+        margin-bottom: 100px
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .unique-page[data-v-ea6d6b75] {
+        margin-bottom:100px
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .unique-page[data-v-ea6d6b75] {
+        gap:150px;
+        margin-bottom: 100px
+    }
+}
