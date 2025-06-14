@@ -13,40 +13,68 @@
 </head>
 <body>
     <header>
-        <nav>
-           <div class="logo">
-                <a href="/WEB/main.html">
-                    <img src="/WEB/image/logo.png" width="200px" height="50px" alt="Logo">
-                </a>
-            </div>
-            <div class="nav-links">
-                <a href="/WEB/about.html">О НАС</a>
-                <a href="/WEB/projects.html">ПРОЕКТЫ</a>
-                <a href="/WEB/career/career.html"><span style="color:#ebab2f">КАРЬЕРА</span></a>
-                <a href="/WEB/news.html">НОВОСТИ</a>
-                <a href="#">КОНТАКТЫ</a>
-                <a href="/WEB/downloads.html">ЗАГРУЗКИ</a>
-                <a href="/WEB/atomic_universe.html">ATOMIC UNIVERSE</a>
-                <div class="language-switcher">
-                    <a href="#"><img src="/WEB/image/us.jpg" alt="English" height="15px"> EN</a>
-                    <a href="#"><img src="/WEB/image/ru.jpg" alt="Russian" height="15px"> RU</a>
-                    <a href="#"><img src="/WEB/image/chin.jpg" alt="Chinese" height="15px"> ZH</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <nav class="primary-nav">
+        <!-- Логотип -->
+        <div class="logo">
+            <a href="/WEB/main.html">
+                <img src="/WEB/image/logo.png" alt="Logo">
+            </a>
+        </div>
 
-    <header>
-        <nav>
-            <a href="#">НАША ИСТОРИЯ</a>
-            <a href="#">НАШИ ЦЕННОСТИ</a>
-            <a href="#">ИССКУСТВО</a>
-            <a href="#">МУЗЫКА</a>
-            <a href="#">МУЗЫКА</a>
-            <a href="#">СЪЕМКИ</a>
-            <a href="#">НАУКА</a>
-        </nav>
-    </header>
+        <!-- Основное меню -->
+        <ul class="main-menu">
+            <li><a href="#" class="active">О НАС</a></li>
+            <li><a href="#">ПРОЕКТЫ</a></li>
+            <li><a href="/WEB/career/career.html"><span style="color: #ebab2f">КАРЬЕРА</span></a></li>
+            <li><a href="#">НОВОСТИ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a href="#">ЗАГРУЗКИ</a></li>
+            <li><a href="#">ATOMIC UNIVERSE</a></li>
+        </ul>
+
+        <!-- Социальные сети -->
+        <div class="social-links">
+            <a href="https://www.youtube.com/@Mundfish?sub_confirmation=1" target="_blank">
+                <img src="https://file.mundfish.com/upload/media/image/youtube-66a79a0aa2b73635794195.svg" alt="YouTube">
+            </a>
+            <a href="https://x.com/mundfish" target="_blank">
+                <img src="https://file.mundfish.com/upload/media/image/vector-66448e5a0eb37789504385-6786062c6e226909016559.svg" alt="X (Twitter)">
+            </a>
+            <a href="https://www.instagram.com/atomicheart_official" target="_blank">
+                <img src="https://file.mundfish.com/upload/media/image/insta-66a79a185a447302564690.svg" alt="Instagram">
+            </a>
+            <a href="https://discord.com/invite/atomicheart" target="_blank">
+                <img src="https://file.mundfish.com/upload/media/image/vector-66a79a3100550469937811.svg" alt="Discord">
+            </a>
+            <a href="https://www.tiktok.com/@mundfishofficial" target="_blank">
+                <img src="https://file.mundfish.com/upload/media/image/tiktok-66a79a2275107537146932.svg" alt="TikTok">
+            </a>
+            <a href="https://space.bilibili.com/3546653627779824" target="_blank">
+                <img src="https://file.mundfish.com/upload/media/image/union-1-6787970ec664e225668929.svg" alt="Bilibili">
+            </a>
+        </div>
+
+        <!-- Языки -->
+        <div class="language-switcher">
+            <a href="#"><img src="/WEB/image/us.jpg" alt="English" height="15px"> EN</a> 
+            <a href="#"><img src="/WEB/image/ru.jpg" alt="Russian" height="15px"> RU</a>
+            <a href="#"><img src="/WEB/image/chin.jpg" alt="Chinese" height="15px"> ZH</a>
+        </div>
+    </nav>
+
+    <!-- Второстепенное меню -->
+    <nav class="secondary-nav">
+        <ul class="secondary-menu">
+            <li><a href="#">НАША ИСТОРИЯ</a></li>
+            <li><a href="#">НАШИ ЦЕННОСТИ</a></li>
+            <li><a href="#">ИСКУССТВО</a></li>
+            <li><a href="#">МУЗЫКА</a></li>
+            <li><a href="#">СЪЕМКИ</a></li>
+            <li><a href="#">НАУКА</a></li>
+        </ul>
+    </nav>
+</header>
+
 
     <section class="about_us">
     <div class="header-section">
@@ -108,15 +136,60 @@
                 </li>
             </ul>
         </div>
+        <div class="carousel-indicators">
+            <button class="indicator active"></button>
+            <button class="indicator"></button>
+            <button class="indicator"></button>
+            <button class="indicator"></button>
+            <button class="indicator"></button>
+        </div>
     </div>
-    </section>
+</section>
 
     <section class="partners">
-        <h2>ПАРТНЕРЫ</h2>
-        <p>
-            Мы гордимся тем, что работаем с компаниями, которые разделяют наши ценности, этику и скрупулёзный подход к разработке и творчеству.
-        </p>
-    </section>
+    <h2>ПАРТНЕРЫ</h2>
+    <p>
+        Мы гордимся тем, что работаем с компаниями, которые разделяют наши ценности, этику и скрупулёзный подход к разработке и творчеству.
+    </p>
+
+    <div class="partner-grid">
+        <a href="https://www.microsoft.com"  target="_blank" class="partner-button">
+            <img src="https://file.mundfish.com/upload/media/image/microsoft-664489757cfd0100266727.svg"  alt="Microsoft Logo" class="partner-logo">
+            <span class="button-text"></span>
+        </a>
+
+        <a href="https://www.nvidia.com"  target="_blank" class="partner-button">
+            <img src="https://file.mundfish.com/upload/media/image/nvidia-6644898576679343508884.svg"  alt="NVIDIA Logo" class="partner-logo">
+            <span class="button-text"></span>
+        </a>
+
+        <a href="https://www.tencent.com"  target="_blank" class="partner-button">
+            <img src="https://file.mundfish.com/upload/media/image/tencent-66448991ef5ee743991821.svg"  alt="Tencent Logo" class="partner-logo">
+            <span class="button-text"></span>
+        </a>
+    </div>
+</section>
+
+<section class="career">
+  <div class="career-section">
+    <div class="content-container">
+      <div class="vertical-line"></div>
+
+      <div class="text-and-button">
+        <div class="text-container">
+          <p>
+            Если вы хотите стать частью чего-то экстраординарного, разделяете философию Mundfish и желаете внести свой вклад в наши уникальные проекты, загляните в раздел «Карьера». Как знать? Быть может, именно вас там ожидает нечто интересное!
+          </p>
+        </div>
+
+        <div class="button-container">
+          <a href="/WEB/career/career.html" class="career-button">НАШИ ВАКАНСИИ →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <section class="our_passion">
         <p>НАША СТРАСТЬ</p>

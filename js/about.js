@@ -6,6 +6,7 @@ slides.forEach((slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 });
 
+const indicators = document.querySelectorAll('.indicator');
 let currentIndex = 0;
 
 function moveToSlide(track, currentSlide, targetSlide) {
@@ -13,6 +14,10 @@ function moveToSlide(track, currentSlide, targetSlide) {
     track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
+
+    // Обновляем активный индикатор
+    indicators.forEach(indicator => indicator.classList.remove('active'));
+    indicators[currentIndex].classList.add('active');
 }
 
 function updateIndex(newIndex) {
@@ -42,6 +47,17 @@ function resetInterval() {
         moveToSlide(track, currentSlide, nextSlide);
     }, 3000);
 }
+
+// Обработка кликов по индикаторам
+indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        const currentSlide = track.querySelector('.current-slide');
+        const targetSlide = slides[index];
+        moveToSlide(track, currentSlide, targetSlide);
+        currentIndex = index;
+        resetInterval();
+    });
+});
 
 // --- Добавляем drag прокрутку мышкой ---
 

@@ -16,36 +16,46 @@ body {
     font-style: normal;
 }
 
-/* Главный хедер с навигацией */
-header {
-    background-color: #000000;
-    padding: 10px 20px;
-}
 
 .highlight {
     background-color: #841d1d;
     color: #ffffff;
     padding: 2px 4px;
 }
-header nav {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+/* Шапка */
+header {
+    background-color: #000;
+    color: #fff;
+    position: sticky; /* Делаем шапку липкой */
+    top: 0; /* Фиксируем шапку в начале страницы */
+    z-index: 1000; /* Устанавливаем высокий z-index для обеспечения видимости над другими элементами */
 }
 
+/* Основной контейнер навигации */
+header .primary-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Логотип */
 header .logo img {
     display: block;
     height: auto;
     max-width: 200px;
 }
 
-header .nav-links {
+/* Основное меню */
+header .main-menu {
     display: flex;
     gap: 20px;
     align-items: center;
+    list-style: none;
 }
 
-header nav a {
+header .main-menu li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
@@ -53,25 +63,45 @@ header nav a {
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 10px 20px;
-    border: 1px solid transparent;
     position: relative;
 }
 
-header nav a:hover {
-    color: #ffffff;
+header .main-menu li a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
 }
 
-header nav a:hover::after {
-    width: 100%;
+header .main-menu li a.active {
+    background-color: #841d1d; /* Красный фон для активной ссылки */
+    color: #fff; /* Белый текст для активной ссылки */
 }
 
-header nav .language-switcher {
+/* Социальные сети */
+header .social-links {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-header nav .language-switcher a {
+header .social-links img {
+    height: 20px;
+    width: auto;
+}
+
+/* Языки */
+header .language-switcher {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .language-switcher a {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -80,16 +110,67 @@ header nav .language-switcher a {
     text-decoration: none;
 }
 
-header nav .language-switcher img {
-    height: 15px;
+/* Второстепенное меню */
+.secondary-nav {
+    display: flex;
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Добавляем нижнюю границу */
 }
 
+.secondary-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box; /* Установка box-sizing */
+    color: rgb(255, 255, 255); /* Белый цвет текста */
+    font-family: GothamProMundfish, sans-serif; /* Шрифт */
+    font-weight: 400; /* Толщина шрифта */
+    height: 52.2344px; /* Фиксированная высота */
+    list-style-type: none; /* Убираем маркеры списка */
+    position: relative; /* Позиционирование */
+    transform: matrix(1, 0, 0, 1, 0, 0); /* Трансформация (если требуется) */
+    transition-property: transform; /* Свойства анимации */
+    transition-timing-function: ease-out; /* Тип анимации */
+    unicode-bidi: isolate; /* Изоляция биди-текста */
+    width: 939px; /* Фиксированная ширина */
+    z-index: 1; /* Значение z-index */
+}
 
+.secondary-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.social-links a img {
+    filter: grayscale(100%) brightness(0.7); /* серый цвет */
+    margin-right: 10px;                      /* отступ между иконками */
+    transition: filter 0.3s ease;
+    height: 20px;
+}
+
+.social-links a:last-child img {
+    margin-right: 0; /* убираем отступ у последней иконки */
+}
+
+.social-links a:hover img {
+    filter: grayscale(0%) brightness(1); /* делаем иконку цветной при наведении */
+}
+
 
 .about_us {
     background-color: #000;
@@ -281,31 +362,6 @@ header nav .language-switcher img {
     letter-spacing: 2px;
 }
 
-.partners {
-    padding: 100px 0;
-    background-color: #000000;
-    text-align: center;
-    position: relative;
-}
-
-.partners h2 {
-    font-size: clamp(40px, 6vw, 80px);
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.partners p {
-    font-size: 18px;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto 60px;
-    color: #ffffff;
-    font-weight: 400;
-}
-
 .our_passion {
     padding: 200px 0;
     background-color: #000000;
@@ -382,7 +438,6 @@ header nav .language-switcher img {
     transform: scale(1.02);
 }
 
-
 footer {
     background-color: #000000;
     padding: 40px 0;
@@ -393,6 +448,168 @@ footer {
     font-weight: 400;
 }
 
+.partners {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.partners h2 {
+    font-size: clamp(40px, 6vw, 80px);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.partners p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.partner-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.partner-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    width: calc(32.33% - 20px);
+    min-width: 200px;
+}
+
+.partner-logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.button-text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.partner-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.career-section {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 40px;
+    font-family: GothamProMundfish, sans-serif;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px; /* расстояние между линией и текстом */
+}
+
+/* Вертикальная линия */
+.vertical-line {
+    width: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: auto;
+    min-height: 200px;
+}
+
+/* Текст и кнопка идут в строку */
+.text-and-button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 1;
+    gap: 16px;
+}
+
+.text-container {
+    max-width: 850px;
+    flex: 1;
+}
+
+.text-container p {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+    color: #fff;
+}
+
+
+.button-container {
+    flex-shrink: 0;
+}
+
+.career-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: auto;
+    white-space: nowrap;
+}
+
+.career-button:hover {
+    background-color: #e5e5e5;
+    transform: translateY(-2px);
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #841d1d;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
+}
+
+/* Секция "Наши ценности" */
+.our_values {
+    padding: 100px 0;
+    background-color: #000000;
+    text-align: center;
+}
+
+.our_values h2 {
+    font-size: clamp(40px, 6vw, 80px);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 /* Карусель */
 .carousel {
     position: relative;
@@ -401,6 +618,10 @@ footer {
     overflow: hidden;
     background-color: #000000;
     padding: 40px 60px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1); /* Левая граница */
+    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Правая граница */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Верхняя граница */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Нижняя граница */
 }
 
 .carousel-track-container {
@@ -438,60 +659,26 @@ footer {
     color: #fff;
 }
 
-/* Кнопки карусели */
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    font-size: 40px;
-    color: #ebab2f;
+/* Индикаторы-точки */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
     cursor: pointer;
-    padding: 10px;
-    user-select: none;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-.carousel-btn:hover {
-    color: #d45a1b;
+.indicator.active {
+    background-color: white; /* Активная точка */
 }
-
-.carousel-btn.prev {
-    left: 15px;
-}
-
-.carousel-btn.next {
-    right: 15px;
-}
-
-/* Кнопки карусели */
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    font-size: 40px;
-    color: #841d1d;
-    cursor: pointer;
-    padding: 10px;
-    user-select: none;
-    transition: color 0.3s ease;
-}
-
-.carousel-btn:hover {
-    color: #841d1d;
-}
-
-.carousel-btn.prev {
-    left: 15px;
-}
-
-.carousel-btn.next {
-    right: 15px;
-}
-
 /*--------------------------------------------------*/
 /* Адаптив */
 @media (max-width: 768px) {
